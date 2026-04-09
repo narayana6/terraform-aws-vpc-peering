@@ -98,8 +98,8 @@ resource "aws_nat_gateway" "nat" {
     var.common_tags,
     var.nat_gateway_tags,
     {
-        Name = "${local.resource_name}-private-${local.az_names[count.index]}"
-        #Name = "${local.resource_name}" #expense-dev
+        #Name = "${local.resource_name}-private-${local.az_names[count.index]}"
+        Name = "${local.resource_name}" #expense-dev
     }
   )
 
