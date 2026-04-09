@@ -55,7 +55,7 @@ resource "aws_subnet" "private" { # first name is public[0], second name is publ
    Name = "${local.resource_name}-private-${local.az_names[count.index]}"
     }
     }
-  )
+  
 
 
 ## Database Subnet
